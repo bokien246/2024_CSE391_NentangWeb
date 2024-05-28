@@ -47,7 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
             const deleteIcon = row.querySelector('.bi-trash-fill');
             deleteIcon.addEventListener('click', () => handleDeleteButtonClick(employee.id));
         });
-
+        
+        document.getElementById('btnthem').addEventListener('click', () => {
+            window.location.href = 'create.html';
+        });
         document.getElementById('pagination-info').innerText = `Hiển thị ${pageData.length} / ${filteredData.length} bản ghi`;
     }
 
